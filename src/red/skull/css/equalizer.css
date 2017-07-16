@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 4, 2016, 8:37:22 AM
+    Author     : Monroe
+*/
+
+.equa{
+    -fx-background-color: rgba(0,0,0,0.8);
+    -fx-background-color: linear-gradient(to bottom,black, rgba(0,0,0,0.7),black)
+}
+
+.bal{
+    -fx-background-color: #0b0b0b;
+}
+
+.back{
+    -fx-background-image: url("/back2.png");
+    -fx-background-color: null;
+}
+
+.back:pressed, .back:hover{
+    -fx-background-image: url("/back2_pressed.png");
+}
+
+.seeker .track {
+    -fx-background-color:red;  /* Hide the track */
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 2.5, 2.5, 1.5;
+    -fx-padding: 0.208333em; /* 2.5 */
+    -fx-pref-height: 1px
+}
+
+.seeker .thumb{
+    -fx-background-color: radial-gradient(center 50% 50%, radius 80%, #0b0b0b,
+        lime);
+}
+
+
+.progress-bar > .bar {
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-color: linear-gradient(to right, lime,green,lime,red);
+    -fx-padding: 0.05em;
+}
+.progress-bar > .track {
+    -fx-background-color: null;
+}
+
+
+.eSeeker{
+    -fx-background-radius: 5;
+    -fx-background-color: #222,#888,black;
+    -fx-background-insets: 0, 1 0 0 1, 1;
+    -fx-padding: 2 ;
+}
+
+.eSeeker .thumb{
+    -fx-background-color: #222,#888,linear-gradient(orangered,black);
+}
+
+.label{
+    -fx-padding: 10 0 0 0;
+    -fx-font-weight: bold;
+    -fx-text-fill:  linear-gradient(#222,#888,black);
+}
+
+.label2{
+    -fx-padding: 10 0 0 0;
+    -fx-font-weight: bold;
+    -fx-text-fill:  #808080;
+}
+
+.list-cell:hover{
+    -fx-border-color: #cecece;
+}
+
+.combo-box-base{
+    -fx-background-color: #808080,#101010;
+    
+}
+
+.combo-box-base:hover{
+    -fx-background-color: linear-gradient(#101010,#0b0b0b);
+}
+
+.combo-box .scroll-bar:vertical{
+    -fx-background-color: null;
+}
+.combo-box .scroll-bar:vertical, .thumb{
+    -fx-background-color: black;
+}
+.combo-box{
+    -fx-background-color: null;
+}
+.combo-box .track{
+    -fx-background-color: #0b0b0b;
+}
+.combo-box .list-view{
+    -fx-pref-height: 170px;
+}
+
+
+.button{
+    -fx-background-color: null;
+}
+
+
+.spec{
+    -fx-background-color: #222,#888,black;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0, 1 0 0 1, 1;
+    -fx-padding: 2;
+}
+
+
+.check-box .box{
+    -fx-font-size: 15;
+    -fx-background-color:
+        #101010,
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),
+        #4f4f4f;
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 3 5 2 5;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "Arial";
+}
+ 
+.check-box:selected .box {
+    -fx-prompt-text-fill:
+        rgb(128,128,128);
+    -fx-prompt-text-size: 12px;
+    -fx-background-color:
+        #808080,
+        rgba(0, 0, 0, 0.4),
+        #cecece;
+}
+.check-box:selected .mark {
+    -fx-background-color:red ;
+        -fx-mark-highlight-color:yellow; 
+        -fx-mark-color:red;
+}

@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 21, 2016, 1:42:54 PM
+    Author     : Monroe
+*/
+
+
+.root{
+    -fx-background-color: #0b0b0b;
+    -fx-background-radius: 10px;
+}
+
+
+
+.progress-bar > .bar {
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-color: orangered;
+    -fx-padding: 0.09em;
+}
+.progress-bar > .track {
+    -fx-background-color: #4f4f4f;
+}
+
+
+
+.close{
+    -fx-background-radius: 50px;
+    -fx-base: red;
+    -fx-border-color: transparent;
+    -fx-padding: 5px;
+}
+
+.mini{
+    -fx-background-radius: 50px;
+    -fx-base: #101010;
+    -fx-border-color: transparent;
+    -fx-padding: 5px;
+}
+
+.vol{
+    -fx-font-size: 100px;
+    -fx-text-fill: orangered;
+}

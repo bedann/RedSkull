@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 4, 2016, 9:11:20 AM
+    Author     : Monroe
+*/
+
+.root{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+}
+
+.button{
+    -fx-background-radius: 30px;
+    -fx-background-color: null;
+}
+
+
+
+.list-view{
+    -fx-background-color: #0b0b0b;
+    -fx-border-width: 0 1 0 1;
+    -fx-border-color: linear-gradient(to bottom, black, red,black);
+}
+
+.list-view .scroll-bar:vertical{
+    -fx-background-color: #000000;
+}
+
+.list-view .scroll-bar:horizontal{
+    -fx-background-color: #000000;
+}
+
+.list-cell{
+    -fx-background-color: #0b0b0b;
+    -fx-text-fill: #8c8c8c;
+}
+.list-cell:even{
+    -fx-background-color: #101010;
+}
+
+.list-cell:selected{
+    -fx-background-color: black;
+}
+
+.list-view .scroll-bar:vertical .track{
+    -fx-background-color: #0b0b0b;
+}
+
+.list-view .scroll-bar:vertical .thumb{
+    -fx-background-color: linear-gradient(to bottom, black, red,black);
+    -fx-border-width: 0 1 0 1;
+    -fx-border-color: linear-gradient(to bottom, black, red,black);
+}
+.list-view .scroll-bar:vertical .decrement-button, increment-button{
+    -fx-background-color: null;
+}
+
+.list-view .scroll-bar:horizontal .track{
+    -fx-background-color: #0b0b0b;
+}
+
+.list-view .scroll-bar:horizontal .thumb{
+    -fx-background-color: linear-gradient(to bottom, black, red,black);
+    -fx-border-width: 0 1 0 1;
+    -fx-border-color: linear-gradient(to bottom, black, red,black);
+}
+.list-view .scroll-bar:horizontal .decrement-button, increment-button{
+    -fx-background-color: null;
+}
+
+
+.label{
+    -fx-text-fill: #808080;
+}

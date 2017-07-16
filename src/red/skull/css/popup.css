@@ -1,0 +1,251 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 21, 2016, 7:19:30 PM
+    Author     : Monroe
+*/
+
+.root{
+    -fx-background-color: #0b0b0b;
+}
+
+.button{
+    -fx-background-color: #808080;
+    -fx-text-fill: #ffffff;
+}
+
+.label{
+    -fx-text-fill: #ff3300;
+}
+
+.values{
+    -fx-text-fill: #cecece;
+}
+
+
+
+.text-field, .text-area {
+    -fx-font-size: 15;
+    -fx-background-color:
+        #101010,
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),
+        #4f4f4f;
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 3 5 2 5;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "Arial";
+}
+ 
+
+ 
+.text-field:focused, .text-area:focused {
+    -fx-prompt-text-fill:
+        rgb(128,128,128);
+    -fx-prompt-text-size: 12px;
+    -fx-background-color:
+        #808080,
+        rgba(0, 0, 0, 0.4),
+        #cecece;
+}
+
+
+.list-view, .list-cell {
+    -fx-font-size: 12;
+    -fx-text-fill:#ffffff;
+    -fx-background-color:
+        #101010,
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),
+        #4f4f4f;
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 3 5 2 5;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-max-width: 200px;
+    -fx-font-family: "Arial";
+}
+
+.list-view .scroll-bar:vertical{
+    -fx-background-color: #0b0b0b;
+    -fx-padding: 0.208333em; /* 2.5 */
+}
+
+.list-view .scroll-bar:horizontal{
+    -fx-background-color: #0b0b0b;
+    -fx-padding: 0.208333em; /* 2.5 */
+}
+
+
+
+
+.list-cell:selected{
+    -fx-text-fill:#ffffff;
+    -fx-background-color: #808080;
+}
+
+.list-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: derive(gray,80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+.list-view .scroll-bar:vertical .thumb{
+    -fx-background-color: black;
+    /*-fx-border-width: 0 1 0 1;*/
+    -fx-border-color: #808080;
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+    -fx-background-insets:2,0,0;
+}
+.list-view .scroll-bar:vertical .decrement-button, increment-button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+}
+
+.url{
+    -fx-font-size: 15;
+    -fx-background-color:
+        #101010,
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),
+        #4f4f4f;
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 3 5 2 5;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: yellow;
+    -fx-highlight-fill: transparent;
+    -fx-highlight-text-fill: red;
+}
+
+.url:focused{
+    -fx-prompt-text-fill:
+        rgb(128,128,128);
+    -fx-prompt-text-size: 12px;
+    -fx-background-color:
+        #101010,
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),
+        #4f4f4f;
+}
+
+.scroll-pane {
+   -fx-background-color:
+        #101010,
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),
+        #4f4f4f;;
+   -fx-border-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+
+.scroll-bar{
+ -fx-background-color: rgb(96,96,96);
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+ -fx-background-color: transparent;
+ -fx-border-color:transparent;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+ -fx-background-color: transparent;
+ -fx-background-insets: 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 4 0 4 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 0 4 0 4;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+ -fx-background-color: rgb(231,231,231);
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+ -fx-background-color: rgb(255,255,255);
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-arrow {
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-background-color: rgb(211,211,211);
+ -fx-padding: 0.25em;
+ -fx-rotate: -90;
+}
+.scroll-bar:vertical .increment-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 0;
+}
+.scroll-bar:horizontal .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 90;
+}
+.scroll-bar:vertical .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: -180;
+}
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+ -fx-background-color: transparent,rgb(96,96,96),rgb(96,96,96);
+}
+
+
+
+
+.progress-bar > .bar {
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-color: orangered;
+    -fx-padding: 0.05em;
+}
+.progress-bar > .track {
+    -fx-background-color: #4f4f4f;
+}
+
